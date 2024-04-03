@@ -1,0 +1,34 @@
+@charset "UTF-8"
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Aprilliya', sans-serif;
+    src: url(../fonts/Aprilliya.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --Aprilliya:'Aprilliya', sans-serif;
+    --Bebas-Neue:"Bebas Neue", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    font-family: var(--Bebas-Neue);
+}
+
+/* Alinhar o texto Bibliografia com CRONOGRAMA DE AULA */
+
+  #bgimg {
+    min-height: 75%;
+    background-position: center;
+    background-size: cover;
+    height: 280px;
+  }
+  
+  .menu {
+    display: none;
+  }
