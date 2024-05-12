@@ -22,13 +22,31 @@ body, html {
 
 /* Alinhar o texto Bibliografia com CRONOGRAMA DE AULA */
 
-  #bgimg {
-    min-height: 75%;
-    background-position: center;
-    background-size: cover;
-    height: 280px;
-  }
+.banner {
+  background-color: black;
+  width: 100%;
+  height: auto;
+}
+
+
+#bgimg {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
   
-  .menu {
-    display: none;
+.menu {
+  display: none;
+}
+
+
+@media only screen and (max-width: 653px) and (max-height: 615px) {
+  body {
+    max-width: 653px;
+    max-height: 615px;
+    resize: none;
+    overflow: hidden;
   }
+}
+
+

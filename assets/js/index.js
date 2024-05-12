@@ -49,3 +49,12 @@ function openMenu(evt, menuName) {
   styleElement.innerHTML = blinkKeyframes;
   document.head.appendChild(styleElement);
 
+
+
+
+
+
+  
+  document.addEventListener('DOMContentLoaded', (event) => {
+    openMenu(event, 'Conteudo');
+});
