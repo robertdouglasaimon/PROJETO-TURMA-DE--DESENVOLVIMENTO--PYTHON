@@ -58,3 +58,33 @@ function openMenu(evt, menuName) {
   document.addEventListener('DOMContentLoaded', (event) => {
     openMenu(event, 'Conteudo');
 });
+
+
+//-----------------------------------------------------------------------------//
+
+
+// Seletor de mídia
+const mediaQuery = window.matchMedia("(max-width: 653px) and (max-height: 615px)");
+
+// Função para manipular a mudança de mídia
+const handleMediaChange = (mediaQuery) => {
+  if (mediaQuery.matches) {
+    // Se a condição de mídia for atendida, oculte a imagem bgimg e mostre a imagem pqimg
+    document.getElementById('bgimg').style.display = 'none';
+    document.getElementById('pqimg').style.display = 'block';
+  } else {
+    // Se a condição de mídia não for atendida, reverta as alterações
+    document.getElementById('bgimg').style.display = 'block';
+    document.getElementById('pqimg').style.display = 'none';
+  }
+};
+
+// Adicionar ouvinte de evento para a mudança de mídia
+mediaQuery.addListener(handleMediaChange);
+
+// Chamar a função uma vez para garantir que os estilos sejam aplicados corretamente inicialmente
+handleMediaChange(mediaQuery);
+
+
+
+//----------------------------------------------------------------------------//

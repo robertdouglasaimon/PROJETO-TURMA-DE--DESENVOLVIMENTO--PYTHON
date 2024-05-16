@@ -34,6 +34,10 @@ body, html {
   height: auto;
   background-size: cover;
 }
+
+#pqimg {
+  display: none;
+}
   
 .menu {
   display: none;
@@ -48,5 +52,17 @@ body, html {
     overflow: hidden;
   }
 }
+
+@media only screen and (max-width: 653px) and (max-height: 615px) {
+  .banner #bgimg {
+    display: none;
+  }
+
+  .banner #pqimg {
+    display: block;
+    /* ou qualquer outra propriedade que você queira aplicar para exibir a imagem */
+  }
+}
+
 
 
